@@ -1,0 +1,171 @@
+body,html {
+    margin: 0;
+    padding: 0;
+ 
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+* {
+    box-sizing: border-box;
+    cursor:url('3d cursor.png'), default;
+}
+
+#banner {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 27px;
+    position:fixed;
+    padding:5px;
+    letter-spacing:-1px;
+    background-color: #FAFFDA;
+}
+.outline {
+    animation: scroll-left 30s linear infinite;
+    width: 5000px;
+    z-index: 1;
+}
+@keyframes scroll-left {
+    from{ transform: translateX(-30%);}
+    to { transform: translateX(0%)}
+}
+.outline2 {
+    left: 0;
+    bottom:0;
+    writing-mode: vertical-rl;
+    height: 4400px;
+    animation: scroll-down 30s linear infinite;
+}
+@keyframes scroll-down {
+   from {transform: translateY(20%);}
+   to {transform: translateY(50%)}
+}
+
+.outline3 {
+    right: 0;
+    bottom:0;
+    writing-mode: vertical-lr;
+    height: 4400px;
+    animation: scroll-up 30s linear infinite;
+}
+@keyframes scroll-up {
+    from {transform: translateY(60%);}
+    to {transform: translateY(30%)}
+ }
+
+.ideas-bg {
+    width: 100vw;
+    height: 100vh;
+    position:relative;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 800px 900px;
+    margin-left: 100px;
+    position: absolute;
+    z-index: 1;
+ }
+
+img {
+    filter: grayscale(100%) contrast(2);
+    height: 1400px;
+ }
+
+.pic {
+    width: 800px;
+    height: 100vh;
+    display: flex;
+    padding: 50px 200px;
+    overflow: hidden;
+}
+
+.nav {
+    padding-top: 60px;
+    width: 900px;
+    height: 100vh;
+ }
+header {
+    font-size: 80px;
+    font-family: 'Inter', sans-serif;
+ }
+#job {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: white;
+    overflow: hidden;
+    transition: 0.2s linear;
+ }
+ #job:hover {
+    scale: 1.2;
+    color: black;
+ }
+.name-intro {
+    margin-left: -500px;
+ }
+.developer {
+    top:140px;
+    margin-left: -170px;
+ }
+.designer {
+    top:280px;
+    margin-left: -170px;
+ }
+.soft-eng {
+    top: 360px;
+    margin-left: -170px;
+ }
+
+#cali {
+    font-family: 'MuseoModerno', cursive;
+    font-size:40px;
+    margin-left:100px;
+    position: relative;
+}
+#cali::before {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    transition: 0.3s linear;
+}
+#cali:hover::before {
+    width: 100%;
+}
+h1 {
+    margin:0;
+}
+.first{
+    margin-top:50px;
+}
+ button {
+    font-size: 50px;
+    background-color: #FAFFDA;
+    padding: 10px 50px;
+    margin: 30px 0px;
+    font-family: 'MuseoModerno', cursive;
+ }
+
+p {
+    font-size: 160px;
+    position: absolute;
+    font-family: 'MuseoModerno', cursive;
+    color: rgb(232, 255, 165);
+    opacity: 0.8;
+    text-shadow: -2px -2px 0 #A4A4A4, 2px -2px 0 #A4A4A4, -2px 2px 0 #A4A4A4, 2px 2px 0 #A4A4A4;
+    transform: skew(-30deg, 20deg);
+    width: 3000px;
+    animation: scroll 25s linear infinite;
+    margin-top: 400px;
+ }
+ @keyframes scroll {
+    from{
+        margin-left:-400px;
+    }
+    to{
+        margin-left: 50px;
+    }
+ }

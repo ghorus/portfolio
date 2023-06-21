@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="aboutme.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Inconsolata&family=Inter:wght@500;800&family=MuseoModerno:wght@600&display=swap" rel="stylesheet">
+  <script src="aboutme.js"></script>
+</head>
+<body id="whole-thing">
+  <h1 class="banner"><span class="strat">THE ULTIMATE STRATEGY</span> TO ESCAPE LIFE. <span class="strat">STARE AT THE SCREEN!</span></h1>
+  <div class="quote-img"><img class="quote" src="life quote.png" height="300px"></div>
+  <div class="tv">
+    <div class="eras">
+      <div class="era" id="era1">
+        <input type="radio" name="eras" id="2000s">
+        <label for="2000s">2000s</label>
+        <div class="btns-content">
+          <button onclick="tj()">Tom & Jerry</button>
+          <button onclick="mib()">Men in Black</button>
+          <button onclick="poke()">Pokemon</button>
+        </div>
+      </div>
+      <div class="era" id="era2">
+        <input type="radio" name="eras" id="2010s">
+        <label for="2010s">2010s</label>
+        <div class="btns-content">
+          <button onclick="fma()">Full Metal Alchemist</button>
+          <button onclick="ghibli()">Weathering With You</button>
+          <button onclick="lol()">League of Legends</button>
+        </div>
+      </div>
+      <div class="era" id="era3">
+        <input type="radio" name="eras" id="2020s">
+        <label for="2020s">2020s</label>
+        <div class="btns-content">
+          <button onclick="opm()">Jujutsu Kaisen</button>
+          <button onclick="bb()">Breaking Bad</button>
+          <button onclick="val()">Valorant</button>
+        </div>
+      </div>
+    </div>
+    <div class="tv-channel">
+      <div class="circle">
+        <div class="text"><p>LIFE LIFE LIFE LIFE LIFE LIFE</p></div>
+      </div>
+      <div class="vid">
+        <iframe id="player" src="" 
+         width="420px" height="350px" allow="autoplay;"></iframe>
+      </div>
+      <img class="tv-image" src="tv.png" height="450px">
+    </div>
+  </div>
+  <img  class="barcode" src="barcode.png" height="80px">
+  <script>
+    const text = document.querySelector('.text p');
+    text.innerHTML = text.innerText.split("").map(
+      (char, i) => 
+    `<span style="transform:rotate(${i * 12}deg)">${char}</span>`
+    ).join("")
+  </script>
+</body>
+</html>

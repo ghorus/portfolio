@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vic's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Inter:wght@800&family=MuseoModerno:wght@600&display=swap" rel="stylesheet">
+    <!--p5js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.js"></script>
+    <!--split & gsap-->
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body onclick="audio.play()">
+    <span class="outline" id="banner">Breaking news - this guy designs, develops, & codes! Breaking news - this guy designs, develops, & codes!
+        Breaking news - this guy designs, develops, & codes! Breaking news - this guy designs, develops, & codes!
+        Breaking news - this guy designs, develops, & codes! Breaking news - this guy designs, develops, & codes! </span>
+    <span class="outline2" id="banner">Breaking news - this guy designs, develops, & codes! Breaking news - this guy designs, develops, & codes!
+        Breaking news - this guy designs, develops, & codes! Breaking news - this guy designs, develops, & codes!
+        Breaking news - this guy designs, develops, & codes! Breaking news - this guy designs, develops, & codes!</span>
+    <span class="outline3" id="banner">Breaking news - this guy designs, develops, & codes! Breaking news - this guy designs, develops, & codes!
+        Breaking news - this guy designs, develops, & codes! Breaking news - this guy designs, develops, & codes!
+        Breaking news - this guy designs, develops, & codes! Breaking news - this guy designs, develops, & codes!</span>
+    <div class="ideas-bg">
+        <div class="container">
+            <div class="pic">
+                <img src="me-pic.png">
+            </div>
+            <div class="nav">
+                <header class="name-intro">I'm Victor, an indie</header>
+                <header class="developer" id="job">Web Developer,</header>
+                <header class="designer" id="job" >Web Designer, &</header>
+                <header class="soft-eng" id="job"> Software Engineer</header>
+                <a  onclick='window.open("aboutme.html")'><h1 id="cali" class="first">about me</h1></a>
+                <a onclick='window.open("process.html")'><h1 id="cali">process</h1></a>
+                <a onclick='window.open("socialmedia.html")'><h1 id="cali">social <s>security</s> media</h1></a>
+            </div>
+        </div>
+        <p class="ideas"><span class="each-idea"> IDEAS </span> <span class="each-idea"> IDEAS </span><span class="each-idea"> IDEAS </span> 
+            <span class="each-idea"> IDEAS </span> <span class="each-idea"> IDEAS </span> <span class="each-idea"> IDEAS </span> <span class="each-idea"> IDEAS </span> 
+            <span class="each-idea"> IDEAS </span> <span class="each-idea"> IDEAS </span> <span class="each-idea"> IDEAS </span> 
+            <span class="each-idea"> IDEAS </span> <span class="each-idea"> IDEAS </span> 
+        </p>
+    </div>
+    <script>
+        const audio = new Audio();
+        audio.src = "specialclick.wav";
+
+    </script>
+    <script src="home.js" ></script>
+    <script src="music.js" defer></script>
+</body>
+</html>

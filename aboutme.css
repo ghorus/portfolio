@@ -1,0 +1,162 @@
+#whole-thing {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image:  linear-gradient(#000005 4px, transparent 4px), linear-gradient(to right, #000005 4px, #e5e5f7 4px);
+    background-size: 80px 80px;
+}
+
+* {
+    box-sizing: border-box;
+    cursor:url('3d cursor.png'), default;
+}
+.banner {
+    width: 100vw;
+    color: white;
+    background-color: black;
+    font-weight:lighter;
+    padding: 8px;
+    text-align: center;
+    margin: 0;
+}
+.strat {
+    font-weight: 700;
+}
+.quote-img {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.tv {
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.eras{
+    position: absolute;
+    width: 1800px;
+}
+.era {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+label:hover {
+    box-shadow: 10px 10px 10px grey;
+}
+button{
+    display: block;
+    font-family: 'Inconsolata', monospace;
+    font-size: 58px;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    border: none;
+    background:none;
+    margin: 20px;
+}
+button:focus {
+    color: black;
+    scale:1.1;
+    text-shadow: 3px 3px 3px white;
+    transition: 0.2s;
+    font-weight: 700;
+}
+button:hover{
+    opacity: 0.5;
+}
+input {
+   display: none;
+}
+input:checked + label + .btns-content {
+    visibility: visible;
+}
+label{
+    font-family: 'Inconsolata', monospace;
+    font-size: 80px;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    transition: 0.1s linear;
+}
+label:active {
+    color: red;
+    transform: translateY(10px);
+}
+.btns-content {
+   visibility: hidden;
+}
+.tv-channel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+}
+.vid {
+    width: 405px;
+    height: 410px;
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+.tv-image {
+    position: absolute;
+    left: 0;
+    z-index: 9;
+}
+iframe {
+    scale:1.2;
+}
+.barcode{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+
+@keyframes rot {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rot 45s linear infinite;
+   
+}
+.text span {
+    position: absolute;
+    transform-origin: 0px 360px;
+    left: 50%;
+    z-index: -1;
+    font-weight: 800;
+    transition: 0.2s;
+}
+.text span:hover {
+    font-size: 80px;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+.text p {
+    font-size: 60px;
+}
+.circle {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
